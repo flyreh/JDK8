@@ -12,12 +12,12 @@ public class TestAleatoriedad {
         //horas:minutos:segundos
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("HH:mm:ss");
         //La manera de colocar el formato a una varible de tiempo es con .format()
-        System.out.println(aleatorio.format(formato));
+        System.out.println("hora generada aleatoriamente (Hora actual más numero entre 0 y 24): "+aleatorio.format(formato));
         //Inicializamos un bucle infinito que se romperá cuando llegue la hora aleatoria generada;
         while(true){
             //creamos un objeto llamado ahora que almacenará el tiempo actual
             LocalDateTime ahora = LocalDateTime.now();
-            System.out.println(ahora.format(formato));
+            System.out.println("Hora actual: "+ahora.format(formato));
             //Comprobamos si la hora actual es IGUAL o DESPUES de la hora generada anteriormente
             //Esto ya que el equals compara también los nanosegundos, por lo que es altamente
             //probable que las horas no sean iguales

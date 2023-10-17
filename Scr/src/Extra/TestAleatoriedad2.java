@@ -1,5 +1,4 @@
 package Extra;
-
 import java.util.ArrayList;
 
 public class TestAleatoriedad2 {
