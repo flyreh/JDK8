@@ -8,7 +8,7 @@ public class Program extends Electricista{
 
 
 
-    //Metodos para Mostrar aleatoriamente las acciones principales y sus repectivas subaccion también aleatorias.
+    //Metodos para Mostrar (returns) las acciones principales (en orden) y sus repectivas subaccion (aleatorias).
 
 
 }

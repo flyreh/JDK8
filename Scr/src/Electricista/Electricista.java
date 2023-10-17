@@ -3,6 +3,8 @@ package Electricista;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import Extra.*;
+
+//Electricista extends Trabajador (???)
 public class Electricista {
 
     public static ArrayList<ArrayList<String>> AccionesPrincipales = new ArrayList<>();
