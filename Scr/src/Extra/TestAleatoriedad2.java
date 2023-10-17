@@ -2,7 +2,7 @@ package Extra;
 
 import java.util.ArrayList;
 
-public class TestAleatoriedad {
+public class TestAleatoriedad2 {
     public static void main(String[] args) {
         Aleatoriedad.setLimite(60);
         /*for (int i = 0; i < 10; i++) {
