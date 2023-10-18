@@ -2,12 +2,14 @@ package Extra;
 import java.util.ArrayList;
 
 public class TestAleatoriedad2 {
+    /*
     public static void main(String[] args) {
+
         Aleatoriedad.setLimite(60);
-        /*for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             int numero = Aleatoriedad.retornarNumeroAleatorio();
             System.out.println("Número aleatorio: " + numero);
-        }*/
+        }
         ArrayList<String> acciones = new ArrayList<>();
         acciones.add("Dormir");
         acciones.add("Hablar");
@@ -17,5 +19,9 @@ public class TestAleatoriedad2 {
             int ind = Aleatoriedad.retornarNumeroAleatorio();
             System.out.println("Accion aleatoria: "+acciones.get(ind));
         }
+
     }
+
+     */
 }
+
