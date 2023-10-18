@@ -1,5 +1,8 @@
 package Electricista;
 import Extra.*;
+
+import javax.swing.plaf.basic.BasicOptionPaneUI;
+import java.awt.event.ActionEvent;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;
@@ -13,8 +16,9 @@ public class Program{
 
     //Metodos para agregar elementos a las acciones principales y subacciones
     //Metodos para Mostrar las acciones principales (en orden) y sus repectivas subacciones (con tiemepo aleatorio).
-
+    ProgressBar g;
     public void mostrarAccionesPrincipales() {
+        g = new ProgressBar();
         for (AccionPrincipal accionPrincipal : Electricista.getAccionesPrincipales()) {
             System.out.println("Realizando: " + accionPrincipal.getNombre() + "...");
             mostrarSubaccionesConAleatoriedad(accionPrincipal.getSubprocesos());
@@ -34,6 +38,7 @@ public class Program{
                 Aleatoriedad.setLimite(Subacciones.size());
                 LocalDateTime ahora = LocalDateTime.now();
                 int indiceAleatorio = Aleatoriedad.retornarNumeroAleatorio();
+                //System.out.println("Hora actual: "+ahora.format(formato));
 
                 if (ahora.equals(aleatorio) || ahora.isAfter(aleatorio)) {
                     System.out.println("Subproceso: "+Subacciones.get(indiceAleatorio)+" Terminado");
@@ -47,6 +52,8 @@ public class Program{
                 }
             }
         }
+        //Aumento de la barra de progreso
+        g.aumentodebarra();
 
     }
 }

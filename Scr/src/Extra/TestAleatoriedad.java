@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TestAleatoriedad {
     public static void main(String[] args) throws InterruptedException {
-/*
+
         TiempoAleatorio.setRango(5);
         LocalDateTime aleatorio = TiempoAleatorio.retornarHoraAleatoria();
         //Date time formatter se usa para colocar el formato de la salida, en este caso
@@ -30,7 +30,7 @@ public class TestAleatoriedad {
             //TimeUnit.SECONDS.sleep(1);
         }
 
- */
+
     }
 
 }

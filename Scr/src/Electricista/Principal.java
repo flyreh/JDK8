@@ -21,10 +21,12 @@ public class Principal {
     }
 
     public static void main(String[] args) {
+
         Principal inicio = new Principal();
         inicio.ingresoNombres();
         Program muestra = new Program();
         muestra.mostrarAccionesPrincipales();
+
 
     }
 
